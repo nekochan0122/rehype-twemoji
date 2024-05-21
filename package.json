@@ -17,6 +17,9 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.cts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "pkgroll --watch",
     "build": "pkgroll --clean-dist --minify"
