@@ -1,10 +1,16 @@
 {
   "name": "rehype-twemoji",
   "description": "A rehype plugin to convert emoji to twemoji.",
+  "repository": "https://github.com/NekoChan0122/rehype-twemoji",
   "author": {
     "name": "NekoChan",
     "url": "https://github.com/NekoChan0122"
   },
+  "keywords": [
+    "rehype",
+    "twemoji",
+    "emoji"
+  ],
   "version": "0.0.1",
   "license": "MIT",
   "type": "module",
