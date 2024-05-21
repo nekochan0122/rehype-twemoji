@@ -5,14 +5,14 @@ A rehype plugin to convert emoji to twemoji.
 ## Install
 
 ```bash
-pnpm i -D @nekochan0122/rehype-twemoji
+pnpm i -D rehype-twemoji
 ```
 
 ## Usage
 
 ```ts
-import { rehypeImage } from '@nekochan0122/rehype-twemoji'
-import type { RehypeImageOptions } from '@nekochan0122/rehype-twemoji'
+import { rehypeImage } from 'rehype-twemoji'
+import type { RehypeImageOptions } from 'rehype-twemoji'
 
 ...
 
