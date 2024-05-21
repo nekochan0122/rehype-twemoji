@@ -29,7 +29,7 @@ const rehypeTwemoji: Plugin<[RehypeTwemojiOptions?], Root> = (inputOptions) => (
           ? emoji.replace(/\uFE0F/g, '')
           : emoji,
       )
-      const size = type === 'svg' ? 72 : 32
+      const size = type === 'svg' ? 'svg' : '72x72'
       const url = `${source}/assets/${size}/${codePoint}.${type}`
       const description = gemojiMap.get(emoji)?.description ?? emoji
 
