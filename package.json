@@ -1,0 +1,32 @@
+{
+  "name": "rehype-twemoji",
+  "description": "A rehype plugin to convert emoji to twemoji.",
+  "author": {
+    "name": "NekoChan",
+    "url": "https://github.com/NekoChan0122"
+  },
+  "version": "0.0.1",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "scripts": {
+    "dev": "pkgroll --watch",
+    "build": "pkgroll --clean-dist --minify"
+  },
+  "dependencies": {
+    "@types/hast": "^3.0.4",
+    "emoji-regex": "^10.3.0",
+    "gemoji": "^8.1.0",
+    "hast-util-find-and-replace": "^5.0.1",
+    "hastscript": "^9.0.0",
+    "twemoji": "^14.0.2",
+    "unified": "^11.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "pkgroll": "^2.1.0",
+    "typescript": "^5.4.5"
+  }
+}
