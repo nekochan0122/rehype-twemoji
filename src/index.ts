@@ -43,6 +43,5 @@ const rehypeTwemoji: Plugin<[RehypeTwemojiOptions?], Root> = (inputOptions) => (
   ])
 }
 
-export default rehypeTwemoji
 export { rehypeTwemoji }
 export type { RehypeTwemojiOptions }
