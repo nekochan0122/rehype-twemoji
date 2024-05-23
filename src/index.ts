@@ -20,7 +20,7 @@ const defaultOptions: RehypeTwemojiOptions = {
 }
 
 const rehypeTwemoji: Plugin<[RehypeTwemojiOptions?], Root> = (inputOptions) => (tree) => {
-  const { format: type, source } = Object.assign(defaultOptions, inputOptions)
+  const { format, source } = Object.assign(defaultOptions, inputOptions)
 
   findAndReplace(tree, [
     [emojiRegexValue, (emoji: string) => {
@@ -29,8 +29,8 @@ const rehypeTwemoji: Plugin<[RehypeTwemojiOptions?], Root> = (inputOptions) => (
           ? emoji.replace(/\uFE0F/g, '')
           : emoji,
       )
-      const size = type === 'svg' ? 'svg' : '72x72'
-      const url = `${source}/assets/${size}/${codePoint}.${type}`
+      const size = format === 'svg' ? 'svg' : '72x72'
+      const url = `${source}/assets/${size}/${codePoint}.${format}`
       const description = gemojiMap.get(emoji)?.description ?? emoji
 
       return h('img', {
