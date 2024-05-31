@@ -11,8 +11,8 @@ pnpm i -D rehype-twemoji
 ## Usage
 
 ```ts
-import { rehypeImage } from 'rehype-twemoji'
-import type { RehypeImageOptions } from 'rehype-twemoji'
+import { rehypeTwemoji } from 'rehype-twemoji'
+import type { RehypeTwemojiOptions } from 'rehype-twemoji'
 
 ...
 
